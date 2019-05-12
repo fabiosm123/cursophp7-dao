@@ -38,6 +38,9 @@ $aluno->insert();
 echo $aluno;
 */
 
+/*
+// Altear um usuário
+
 $usuario = new Usuario();
 
 $usuario->loadById(17);
@@ -45,5 +48,13 @@ $usuario->loadById(17);
 $usuario->update("professor", "!@#$%");
 
 echo $usuario;
+*/
 
+$usuario = new Usuario();
+
+$usuario->loadById(16);
+
+$usuario->delete();
+
+echo $usuario;
 ?>
